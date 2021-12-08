@@ -1,0 +1,119 @@
+@import url('font.css');
+@import url('layout.css');
+@import url('responsive.css');
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    /*list-style: none;    */  
+}
+
+html{
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;                      
+}
+
+.container{
+    padding: 10px;
+    margin: 0;
+}
+p, .titreStyle, .cardButton, .rights, #listeSansOrdre, #listeAvecOrdre{
+    color: #777572;
+}
+
+/************nav****************************************************************************************************/
+/**********flexbox1************/
+#navbar{
+    text-decoration: none;
+    background-color: #000000;
+    padding: 5px;
+    margin-bottom: 5px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    cursor: pointer;
+}
+
+.desknav > li { 
+    text-align: center;
+    height: 30px;
+}    
+.desknav > li > a { 
+    color: #ffffff;
+    text-align: center;
+}
+.desknav > li :hover {
+    color: #d8acc8;
+}
+.desknav > li > a > .active{
+    color:  #c573a7;
+}
+/************cards****************************************************************************************************/
+.card-1{
+    border-radius: 5px;
+    overflow: hidden;
+    transition: 0.3s;
+    padding: 10px;
+}
+.card-1:hover{
+    transform: translate(0.5%);
+    box-shadow: 0 55px 60px rgba(0,0,0,0.5);
+}
+.imgcard{
+    display: block;
+    width: 100%;
+}
+/*.figcap{
+    text-align: center;
+    padding: 10px;
+}*/
+.titreStyle{
+    text-align: center;
+    padding: 10px;
+}
+
+u{
+    text-decoration: #c573a7 underline;
+}
+.titreStyle, .paragrapheStyle{
+    font-weight:900;
+    font-style: italic;
+}
+.cardButton{
+    background-color: #d8acc8;
+    border: none;
+    padding: 10px;
+    margin: 10px;
+    cursor: pointer;
+}
+/************contact****************************************************************************************************/
+form{
+    border: ridge;
+    border-radius: 5px;
+    padding: 10px;
+}
+.contactButton, .nextbtn, .previousbtn{
+    background-color: #000000;
+    border-radius: 5px;
+    padding: 5px;
+    color: white;
+}
+/************footer****************************************************************************************************/
+footer{
+    text-align: center;
+    padding: 2px;
+    background-color: #000000;
+}
+.rights{
+    text-decoration: underline;
+}
+/***************grid************************************************************************************************/
+/***************grid************************************************************************************************/
+
+
+.title, nav, .caption-img, .card-1, .contactus{
+box-shadow: 0 55px 60px rgba(0,0,0,0.1);
+}
+

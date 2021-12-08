@@ -1,0 +1,79 @@
+/*@import url('css/style.css');*/
+
+/* Phones */ 
+@media only screen and (max-width : 767px) {
+    #homeIcon{
+        display: none;
+    }
+
+    .desknav{
+        display: flex;
+        flex-direction: column;
+    }
+    .desknav > li{ 
+        padding: 5px 5px 0px 5px;
+    }    
+
+    #c1{
+        grid-area: 1/1/5/13;
+    }
+    #c2{
+        grid-area: 5/1/9/13;
+    }
+    #c3{
+        grid-area: 9/1/13/13;
+    }
+}
+
+/* Tablets */
+@media only screen and (min-width : 768px) and (max-width : 991px) {
+    #navbar{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+    }
+    .desknav{
+        display: flex;
+        flex-direction: row;
+    }
+    .desknav > li { 
+        padding: 15px 5px 0px 5px;
+    }    
+
+    #c1{
+        grid-area: 1/1/7/13;
+    }
+    #c2{
+        grid-area: 7/1/13/7;
+    }
+    #c3{
+        grid-area: 7/7/13/13;
+    }
+}
+
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+    #navbar{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    .desknav{
+        display: flex;
+        flex-direction: row;
+    }
+    .desknav > li { 
+        padding: 15px 5px 0px 5px;
+    }    
+    #c1{
+        grid-area: 1/1/13/5;
+    }
+    #c2{
+        grid-area: 1/5/13/9;
+    }
+    #c3{
+        grid-area: 1/9/13/13;
+    }
+
+}
